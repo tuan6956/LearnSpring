@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_LearnJsonSpring_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.developer.demo.entity.Doi</class>
+    <class>com.developer.demo.entity.Clb</class>
+    <class>com.developer.demo.entity.HoiVien</class>
+    <class>com.developer.demo.entitycovua.Clb</class>
+    <class>com.developer.demo.entitycovua.Doi</class>
+    <class>com.developer.demo.entitycovua.HoiVien</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://DESKTOP-I5VQ77C\covua:1433;databaseName=covua"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect"/> 
+      <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/> 
+
+    </properties>
+  </persistence-unit>
+</persistence>
